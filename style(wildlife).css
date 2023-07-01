@@ -1,0 +1,193 @@
+body{
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    color:black;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header{
+    position: relative;
+}
+
+header img {
+    width: 200%;
+}
+
+header div{
+    background: url('./lenscope_files/black%20background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    width: 140%;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("lenscope-mr-de-haviland-regular.ttf");
+}
+
+#lines {
+    position: absolute;
+    top:-2%;
+    left:-2%;
+    width: 140%;
+    height:15%;
+}
+
+#logo{
+    height: 50%;
+    width: 5%;
+}
+
+.title {
+    font-family: "MyFont";
+    font-size: 70px;
+    margin:0;
+    padding-top:1%;
+    padding-left: 1%;
+    color:white;
+}
+div.nav{
+    padding-left:15%;
+}
+.nav{
+    text-align:right;
+    margin: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 0;
+    font-size: 20px;
+    font-family: Audiowide-regular;
+}
+
+.nav a{
+    padding:1.5%;
+    align: right;
+}
+
+.nav a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#main{
+    color: #660500;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: "Berlin Sans FB Demi";
+    font-size: 80px;
+    padding: 5%;
+    padding-left: 19%;
+    margin: 1%;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+#pictures{
+    margin: 0.5%;
+    display: flex;
+    padding-left:-1%;
+    height:100%;
+    width:100%;
+    padding: 1%;
+
+}
+
+.genres{
+    margin:0.5%;
+    border:5px solid #660500;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    opacity:0.80;
+    padding:12.5%;
+}
+
+.genres:hover{
+    height: 100%;
+    width: 100%;
+    opacity: 6;
+    transition: .5s ease;
+    zoom: 20%;
+}
+
+.profiles {
+    display: flex;
+    margin: 1.5%;
+    width: 100%;
+    padding-top: 0%;
+    padding-left: 0.5%;
+    justify-items: center;
+}
+
+#circle{
+    background: transparent;
+    border-radius: 20%;
+    border: 3px solid #660500;
+    height: 200px;
+    width:200px;
+    padding-left: 5;
+}
+
+
+.slideshow-container {
+    max-width: 300%;
+    position: relative;
+    margin: auto;
+}
+
+legend{
+    padding-top: 1%;
+    padding-left: 0;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    align-content: center;
+    color: #660500;
+    font-size: 40PX;
+    font-family: Audiowide-regular;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+footer{
+    position: relative ;
+    left: 0;
+    bottom: 0%;
+    width: 120%;
+    height:4%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 777;
+}

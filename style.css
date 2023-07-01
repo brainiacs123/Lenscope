@@ -1,0 +1,349 @@
+body{
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+body{
+    background:url(./lenscope_files/bg.jpg) right no-repeat fixed #fff;
+    -webkit-font-smoothing:antialiased;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    color:black;
+    scrollbar-color: #660500;
+}
+header{
+    position: relative;
+}
+
+header img {
+    width: 200%;
+}
+
+header div{
+    background: url('./lenscope_files/black background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    width: 140%;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("lenscope-mr-de-haviland-regular.ttf");
+}
+
+#lines {
+    position: absolute;
+    top:-9%;
+    left:-1%;
+    width: 110%;
+    height:15%;
+}
+
+#logo{
+    height: 50%;
+    width: 5%;
+}
+
+.title {
+    font-family: "MyFont";
+    font-size: 60px;
+    margin:0;
+    padding-top:1%;
+    padding-left: 1%;
+    color:white;
+}
+div.nav{
+    padding-left:13%;
+}
+.nav{
+    text-align:right;
+    margin: 0;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-right: 0;
+    font-size: 19px;
+    font-family: Audiowide-regular;
+}
+
+.nav a{
+    padding:1.5%;
+    align: right;
+}
+
+.nav a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#about h1 {
+    color: #660500;
+    text-decoration: underline;
+    font-family: Castellar;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.columns {
+    column-count: 2;
+    column-gap: 4%;
+	padding: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+    text-align: justify;
+    font-family: Georgia;
+}
+
+.team{
+	position:relative;
+}
+.team h3{
+	font-family: Georgia;
+    font-style: italic;
+	color: #660500;
+    font-size: 150%;
+}
+.fade-up {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-up.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+.partners{
+	display:flex;
+	padding-left:0%;
+	position:relative;
+}
+.partners img{
+	width: 260px;
+	height:280px;
+    border: 2px solid #660500;
+}
+h3{
+	font-family: Helvetica;
+	margin:2em 0 1em 0;
+}
+.teampic:hover .teaminfo {
+	opacity: 1;
+}
+.teampic:hover {
+    opacity: 0.5;
+    transition: 1s linear;
+}
+.teampic {
+	position: relative;
+	width: 270px;
+	margin:0px;
+	padding:0px;
+}
+.teaminfo {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	color:white;
+}
+.teampic p{
+	color: white;
+	font-family:'Kaushan Script';
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	}
+.teamdiv{
+	width:269px;
+	margin:0px;
+	padding:0px;
+}
+
+ form#report{
+	margin-top:5%;
+	margin-bottom:5%;
+}
+ #report h2{
+    font-family: Georgia;
+    font-style: italic;
+	color: #660500;
+    font-size: 150%;
+ }
+#report input{
+	height:40px;
+	width:526px;
+}
+.aaa {
+	padding:5;
+}
+.aaa input{
+	border: 2px solid black;
+}
+textarea{
+	width:526px;
+	height:70px;
+	border: 2px solid black;
+}
+#report button{
+	background-color:#660500;
+	color:white;
+	height:40px;
+	width:526px;
+    border: 2px double black;
+    margin-top: 0.5%;
+}
+@keyframes vibrate {
+	0% { transform: translate(0, 0); }
+	20% { transform: translate(-10px, -10px); }
+	40% { transform: translate(10px, 10px); }
+	60% { transform: translate(-10px, 10px); }
+	80% { transform: translate(10px, -10px); }
+	100% { transform: translate(0, 0); }
+}
+.message-icon {
+	animation: vibrate 1.5s ;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease;
+	z-index: 888;
+}
+#message-box {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #660500;
+  z-index: 999;
+  display: none;
+}
+#profile{
+	padding-right:5px;
+	height:70px;
+	width:70px;
+	display: flex;
+	float:left;
+}
+.message-header {
+  background-color: #f5f6f7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-title {
+  font-size: 18px;
+}
+
+#close-btn {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#close-btn:focus {
+  outline: none;
+}
+.message-body {
+  height: 300px;
+  padding: 10px;
+  overflow-y: scroll;
+  color:black;
+}
+#output{
+text-align:right;
+display: flex;
+  justify-content: flex-end;
+}
+img{
+	padding:5px;
+	height:70px;
+	width:70px;
+	display: flex;
+	float:left;
+}
+.message-footer {
+  padding: 0px;
+  padding-bottom: 10px;
+  color:black;
+  border-color:grey;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4267B2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #29487d;
+}
+
+#send-btn {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer{
+	 position: relative ;
+	 left: 0;
+	 bottom: 0;
+	 width: 100%;
+	 height:50px;
+	 background-color: black;
+	 color: white;
+	 text-align: center;
+	 padding: 10px 0;
+	 z-index: 777;
+ }

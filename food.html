@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title> Food Blogging </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style(food).css" type="text/css">
+</head>
+
+<body>
+
+<video id="background-video" autoplay loop muted poster="/genres/food/pexels-rdne-stock-project-5848233-1920x1080-24fps - frame at 0m0s.jpg">
+    <source src="./genres/food/pexels-rdne-stock-project-5848233-1920x1080-24fps.mp4" type="video/mp4">
+</video>
+
+<header id="home">
+    <img id="lines" src="./lenscope_files/lines.png">
+    <div>
+        <img src="./lenscope_files/logo-flash.png" id="logo">
+        <p class="title">Lenscope</p>
+        <div class="nav">
+            <a href="lenscope.html#home"> <b> HOME </b></a>
+            <a href="lenscope.html#about"> <b> ABOUT US </b></a>
+            <a href="lenscope.html#team"> <b> PARTNERS </b></a>
+            <a href="services.html"> <b> SERVICES  </b></a>
+            <a href="services.html"> <b> BOOK NOW  </b></a>
+            <a href="lenscope.html#report"> <b> REPORT  </b></a>
+            <a href="log-in.html"> <b> LOG-IN </b></a>
+        </div>
+    </div>
+</header>
+
+<div class="gallery">
+    <div id="main"> POTRAIT GALLERY </div>
+
+    <div id="pictures">
+
+        <div class="genres" style="background-image:url(./genres/food/1.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/2.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/3.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/4.jpg);"> </div>
+    </div>
+
+    <div id="pictures">
+        <div class="genres" style="background-image:url(./genres/food/5.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/6.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/7.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/8.jpg);"> </div>
+    </div>
+
+    <div id="pictures">
+
+        <div class="genres" style="background-image:url(./genres/food/9.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/10.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/11.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/12.jpg);"> </div>
+    </div>
+
+    <div id="pictures">
+
+        <div class="genres" style="background-image:url(./genres/food/13.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/14.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/15.jpg);"> </div>
+
+        <div class="genres" style="background-image:url(./genres/food/16.jpg);"> </div>
+    </div>
+
+</div>
+
+<div class="profiles">
+    <div class="slideshow-container">
+        <div class="mySlides fade"  align="center">
+            <legend align="center"> PHOTOGRAPHERS </legend>
+            <div   style="display:inline-flex">
+
+                <a href="./profiles/profile7/profile7.html">
+                    <div style="background-image:url(./photographers/7.png);background-size:cover" id="circle"></div>
+                </a> &nbsp &nbsp
+
+                <a href="./profiles/profile11/profile11.html">
+                    <div style="background-image:url(./photographers/11.png);background-size:cover" id="circle"></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<footer>
+    <div>
+        <p> Copyright 2023 Lenscope Student Project (CIT-3rd year). All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

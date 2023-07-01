@@ -1,0 +1,373 @@
+
+body{
+    background:url(./lenscope_files/bg.jpg) right no-repeat fixed #fff;
+    width: 100%;
+    position:absolute;
+    color: #660500;
+}
+
+body{
+    -webkit-text-size-adjust: 100%;
+    padding: 0;
+    margin: -1%;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+}
+
+header img {
+    width: 200%;
+    padding: 1%;
+}
+
+header div{
+    background: url('./lenscope_files/black background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    width: 140%;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("lenscope-mr-de-haviland-regular.ttf");
+}
+
+#lines {
+    position: absolute;
+    top:-9%;
+    left:-1%;
+    width: 110%;
+    height:15%;
+}
+
+#logo{
+    height: 50%;
+    width: 5%;
+}
+
+.title {
+    font-family: "MyFont";
+    font-size: 70px;
+    margin:0;
+    padding-top:1%;
+    padding-left: 1%;
+    color:white;
+}
+div.nav{
+    padding-left:10%;
+}
+.nav{
+    text-align:right;
+    margin: 0;
+    padding-bottom: 1%;
+    padding-top: 1.5%;
+    padding-right: 0;
+    font-size: 19px;
+    font-family: Audiowide-regular;
+}
+
+.nav a{
+    padding:1.5%;
+    align: right;
+}
+
+.nav a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.profiles {
+    display: flex;
+    margin: 1.5%;
+    width: 100%;
+    padding-top: 0%;
+    padding-left: 0.5%;
+    justify-items: center;
+}
+
+.profiles a {
+    font-family: 'Courier New';
+    color: #660500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#circle{
+    background: transparent;
+    border-radius: 50%;
+    border: 3px solid #660500;
+    height: 200px;
+    width:200px;
+    padding-left: 5;
+}
+
+
+.slideshow-container {
+    max-width: 500%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: 3.5%;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #d9d4cc;
+    opacity: 30%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+    background-color: #660500;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+legend{
+    padding-top: 1%;
+    padding-left: 0;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    align-content: center;
+    color: #460400;
+    font-size: 31px;
+    font-family: "arial black";
+    text-decoration: underline;
+}
+
+
+#services{
+    display: flex;
+    padding-left:1%;
+    height:100%;
+    width:100%;
+}
+
+.services h3{
+     font-size: 10px;
+ }
+
+.services h4{
+    font-size: 20px;
+}
+
+#button{
+    alignment: center;
+    border-radius: 10%;
+    border: 3px solid white;
+    height: 100%;
+    width: 130%;
+   cursor: pointer;
+    padding-left: 4%;
+}
+#button h4{
+    font-family: "Arial Black";
+    font-size: 15px;
+    color: white;
+    text-decoration: no-underline;
+}
+.genres{
+    margin:0.5%;
+    border:5px solid #660500;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    opacity:0.75;
+    padding:11%;
+}
+
+.genres:hover{
+    opacity: 1;
+    transition: .5s ease;
+    border: #460400;
+}
+
+.genreinfo{
+    text-align: center;
+    color: rgba(140, 5, 0, 0.89);
+    font-size: 15px;
+}
+
+.genres:hover .genreinfo{
+    text-align:center;
+    opacity: 6;
+    transition: .5s ease;
+    color: #460400;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.message-icon {
+    animation: vibrate 1.5s ;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    z-index: 888;
+}
+#message-box {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #660500;
+    z-index: 999;
+    display: none;
+}
+#profile{
+    padding-right:5px;
+    height:70px;
+    width:70px;
+    display: flex;
+    float:left;
+}
+.message-header {
+    background-color: #f5f6f7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-title {
+    font-size: 18px;
+}
+
+#close-btn {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#close-btn:focus {
+    outline: none;
+}
+.message-body {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    color:black;
+}
+#output{
+    text-align:right;
+    display: flex;
+    justify-content: flex-end;
+}
+img{
+    padding:5px;
+    height:70px;
+    width:70px;
+    display: flex;
+    float:left;
+}
+.message-footer {
+    padding: 0px;
+    padding-bottom: 10px;
+    color:black;
+    border-color:grey;
+}
+
+.send-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4267B2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #29487d;
+}
+
+#send-btn {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 777;
+}

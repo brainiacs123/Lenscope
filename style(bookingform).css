@@ -1,0 +1,268 @@
+
+body{
+    background:url(./lenscope_files/bg.jpg) right no-repeat fixed #fff;
+    width: 100%;
+    position:absolute;
+    color: #660500;
+}
+
+body{
+    -webkit-text-size-adjust: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+}
+
+header img {
+    width: 200%;
+    padding: 1%;
+}
+
+header div{
+    background: url('./lenscope_files/black background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    width: 140%;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url("lenscope-mr-de-haviland-regular.ttf");
+}
+
+#lines {
+    position: absolute;
+    top:-10%;
+    left:-1%;
+    width: 100%;
+    height:10%;
+}
+
+#logo{
+    height: 40%;
+    width: 5%;
+}
+
+.title {
+    font-family: "MyFont";
+    font-size: 65px;
+    margin:0;
+    padding-top:1.5%;
+    padding-left: 1%;
+    color:white;
+}
+div.nav{
+    padding-left:10%;
+}
+.nav{
+    text-align:right;
+    margin: 0;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-right: 0;
+    font-size: 19px;
+    font-family: Audiowide-regular;
+}
+
+.nav a{
+    padding:1.5%;
+    align: right;
+}
+
+.nav a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.form-container{
+    background: url('./lenscope_files/formbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 3%;
+    margin: 10%;
+    border: 3px solid rgba(110, 21, 10, 0.92);
+}
+
+.FirstPart{
+    margin: 1%;
+    padding: 1%;
+    padding-left: 30%;
+}
+
+.FirstPart input{
+    height: 30px;
+    width: 250px;
+    padding: 2%;
+    margin: 0.5%;
+}
+
+#header_1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#dropdown{
+    height: 25px;
+    width: 25%;
+    padding: 2%;
+    margin: 0.5%;
+    left: 0;
+}
+
+#dropdown option{
+    color: #460400;
+    background-color: antiquewhite;
+    border: 2px solid rgba(92,17,8,0.92);
+}
+
+.SecondPart{
+    margin: 1%;
+    padding: 1%;
+    padding-left: 30%;
+    width: 90%;
+}
+
+.thirdpart {
+    margin: 1%;
+    padding: 1%;
+    padding-left: 30%;
+}
+
+.thirdpart input{
+    height: 30px;
+    width: 250px;
+    padding: 2%;
+    margin: 0.5%;
+}
+
+.fourthpart {
+    margin: 1%;
+    padding: 1%;
+    padding-left: 30%;
+    width: 90%;
+}
+
+.fifthpart {
+    margin: 1%;
+    padding: 1%;
+    padding-left: 30%;
+    width: 90%;
+}
+
+.fifthpart input{
+    height: 25px;
+    width: 250px;
+    padding: 2%;
+    margin: 0.5%;
+}
+label {
+    text-align: left;
+    font-size: 20px;
+}
+
+#choices_row{
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 5%;
+    padding: 3%;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 5%;
+}
+
+#choice select{
+    border: 2px solid rgba(92,17,8,0.92);
+}
+
+#choices input{
+    border: 2px solid rgba(92,17,8,0.92);
+}
+
+button{
+    border: 2px solid rgba(92,17,8,0.92);
+    background-color: cornsilk;
+}
+
+#signature {
+    border: 3px solid rgba(92,17,8,0.92);
+    height: 15%;
+    width: 30%;
+    cursor: crosshair;
+    background-color: whitesmoke;
+    position: relative;
+    left: 2%;
+    stroke-width: 2px;
+    stroke-opacity: 1;
+    -webkit-text-stroke-color: black;
+}
+
+#sign{
+    left:2%;
+    padding-left: 1%;
+    margin-top: 2%;
+}
+
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#design{
+    position: relative;
+    background: whitesmoke;
+    color: rgba(92,17,8,0.92);
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    padding: 1%;
+    transition: 0.5s ease;
+    font-weight: bolder;
+    margin-bottom: 1%;
+    left: 2%;
+    font-family: 'Times New Roman';
+    width: 50%;
+    height: 35%;
+}
+
+#design:hover{
+    letter-spacing: 1px;
+    background: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 17px;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 110%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 777;
+}

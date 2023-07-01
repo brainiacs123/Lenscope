@@ -1,0 +1,243 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title> Lenscope</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body>
+		<header id="home">
+			<img id="lines" src="./lenscope_files/lines.png">
+			<div>
+				<img src="./lenscope_files/logo-flash.png" id="logo">
+				<p class="title">Lenscope</p>
+				<div class="nav">
+					<a href="lenscope.html#home"> <b> HOME </b></a>
+					<a href="lenscope.html#about"> <b> ABOUT US </b></a>
+					<a href="lenscope.html#team"> <b> PARTNERS </b></a>
+					<a href="services.html"> <b> SERVICES  </b></a>
+					<a href="booking.html"> <b> BOOK NOW  </b></a>
+					<a href="lenscope.html#report"> <b> REPORT  </b></a>
+					<a href="log-in.html"> <b> LOG-IN </b></a>
+				</div>
+			</div>
+		</header>
+		<style>
+		.slider {
+		margin:0;
+		padding:0;
+		width: 100%;
+		height: 500px;
+		overflow: hidden;
+		position: relative;
+		}
+		.slide {
+		position: absolute;
+		top: 0;
+		left: -1%;
+		width: 110%;
+		height: 110%;
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+		}
+
+		.slide.active {
+		opacity: 1;
+		}
+		.slide img{
+		width:100%;
+		height:100%;
+		}
+		</style>
+		<div class="slider">
+			<div class="slide active">
+				<img src="./Lenscope_files/back1.jpg">
+			</div>
+		  	<div class="slide">
+				<img src="./Lenscope_files/back2.jpg">
+		  	</div>
+		  	<div class="slide">
+				<img src="./Lenscope_files/back3.jpg">
+		 	</div>
+		 	<div class="slide">
+				<img src="./Lenscope_files/back4.jpg">
+		  	</div>
+		</div>
+	<script>
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 4000);
+
+		function nextSlide() {
+		  slides[currentSlide].classList.remove('active');
+		  currentSlide = (currentSlide + 1) % slides.length;
+		  slides[currentSlide].classList.add('active');
+		}
+	</script>
+
+        <div id="about">
+			<h1 align="center">A World Through Lens</h1>  
+			<div class="columns">
+				<h2 style="margin-top:0.7%;"><i class="fa fa-camera-retro"></i> Introduction </h2>
+
+				<div> All of us look at the world through our own lens, which causes us to instinctively recognize threats, opportunities, and patterns according to our biases and preferences. Lenscope is a photography agency that offers every photographer the chance to show the world through their own unique lens.
+				</div>
+
+				<h2><i class="fa fa-coffee"></i> Passion</h2>
+
+				<div> We have turned our part-time hobby into a full-time profession, and our passion for photography remains undiminished. This ensures that we infuse every job we undertake with that same enthusiasm while also offering quality, value, diversity, and honesty in our approach. We proudly proclaim that <br/>
+                <center> <i> 'We Focus on You!' </i> </center>
+				</div>    
+			</div>
+		 </div>
+
+		 <div id="divider" style="border-bottom-width:2px; border-bottom-style:solid; border-color:#bdbdbd; height:2px; margin-left:7%; margin-right:7%; margin-top:5px; margin-bottom:5px"> </div>
+
+	    <script>
+      		window.addEventListener("load", function() {
+        	var element = document.querySelector(".fade-in");
+        	element.classList.add("show");
+      		});
+		</script>
+
+<div class="team">
+	<h3 id="team" align="center" > Creative Minds Behind This Project...</h3>
+	<div class="partners fade-up">
+		<div class="teamdiv" >
+			<figure class="teampic">
+				<img src="./Lenscope_files/9.jpg" alt="img01" >
+				<figcaption class="teaminfo">
+					<p> <b> <u> Humama Usmani </u> </b> <i> <br/> Group Leader <br/> Web Developer </i> </p>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="teamdiv" >
+			<figure class="teampic">
+				<img src="./Lenscope_files/10(1).jpg" alt="img02">
+				<figcaption class="teaminfo">
+					<p> <b> <u> Noor Rashid </u> </b> <i> <br/> Group's Vice <br/> Web Developer </i> </p>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="teamdiv" >
+			<figure class="teampic">
+				<img src="./Lenscope_files/17.jpg" alt="img04">
+				<figcaption class="teaminfo">
+					<p> <b> <u> Laiba Sabir </u> </b> <i> <br/> Group Member <br/> Web Developer </i> </p>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="teamdiv" >
+			<figure class="teampic">
+				<img src="./Lenscope_files/12(1).jpg" alt="img03">
+				<figcaption class="teaminfo">
+					<p> <b> <u> Maham Khan </u> </b> <i> <br/> Group Member <br/> Web Designer </i> </p>
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="teamdiv" >
+			<figure class="teampic">
+				<img src="./Lenscope_files/20.jpg" alt="img04">
+				<figcaption class="teaminfo">
+					<p> <b> <u> Mahnoor Khan </u> </b> <i> <br/> Group Member <br/> Web Designer </i> </p>
+				</figcaption>
+			</figure>
+		</div>
+	</div>
+</div> <br> <br>
+
+<div id="divider" style="border-bottom-width:2px; border-bottom-style:solid; border-color:#bdbdbd; height:2px; margin-left:7%; margin-right:7%; margin-top:5px; margin-bottom:5px"> </div>
+
+		<script>
+			  // Trigger the transition on scroll
+			  window.addEventListener("scroll", function() {
+				var element = document.querySelector(".fade-up");
+				var position = element.getBoundingClientRect().top;
+				var screenHeight = window.innerHeight;
+				if (position < screenHeight) {
+				  element.classList.add("show");
+				}
+			  });
+		</script>
+
+		<center>
+			<form id="report">
+				<h2> Leave A Review </h2>
+				<div>
+					<div class="aaa"><input type="text" placeholder="Name"></div>
+					<div class="aaa"><input type="email" placeholder="email"></div>
+					<div class="aab"><textarea rows="5" placeholder="Message"></textarea></div>
+					<a onclick="alert('Your report/review have been submitted. Thanks for the output, we will work on it')">
+						<button><i class="fa fa-paper-plane"></i> Send</button>
+					</a>
+				</div>
+			</form>
+		</center>
+
+		<a href="#" id="open-message-box">
+			<img class="message-icon"src="./lenscope_files/messageicon.png" alt="Messages"></a>
+		<div id="message-box">
+			<div class="message-header">
+				<div class="message-title">New Message</div>
+				<div id="close-btn">×</div>
+			</div>
+			<div class="message-body">
+				<div>
+					<a href="#" id="profile">
+					<img src="./lenscope_files/Self_portrait_0001.jpg" alt="Message" style="padding-right:5px;"></a>
+					<div>
+						<p style="padding-top:9px;padding-left:5px;">Hello! Welcome to the messages side of our first ever website..<p></div>
+				</div>
+				<div style="padding-top:9px;" id="output"></div>
+			</div>
+				
+			<div class="message-footer">
+				<input id="inputField" type="text" placeholder="Type your messages..." style="width: 238px;height: 33px;">
+				<button id="send-btn" onclick="addToScreen()"> Send </button>
+			</div>
+		</div>
+		<script>
+			function addToScreen() {
+				var input = document.getElementById("inputField").value;
+    	  		var output = document.getElementById("output");
+				const messageImage = document.createElement("img");
+				messageImage.src = "./lenscope_files/unknown.png";
+        		output.innerHTML = "<p>" +  input +"</p>";
+				output.appendChild(messageImage);
+        		document.getElementById("inputField").value = "";
+      		}
+		</script>
+
+		<script>
+			var messageBox = document.getElementById("message-box");
+			var openButton = document.getElementById("open-message-box");
+			var closeButton = document.getElementById("close-btn");
+
+			openButton.addEventListener("click", function() {
+			  messageBox.style.display = "block";
+			});
+
+			closeButton.addEventListener("click", function() {
+			  messageBox.style.display = "none";
+			});
+		</script>
+
+		<footer>
+			<div>
+				<p><i class="fa fa-facebook fa-2x"></i>
+				  <i class="fa fa-instagram fa-2x"></i>
+				  <i class="fa fa-twitter fa-2x"></i>
+				  <i class="fa fa-flickr fa-2x"></i>
+				
+				Copyright 2023 Lenscope Student Project (CIT-3rd year). All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
